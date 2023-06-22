@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "41d800c1-857a-4e77-85ec-47e8b36f761a",
+		"name": "My API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2731936"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "UpdateProduct",
+					"item": [
+						{
+							"name": "/Products/UpdateProduct",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"enabled\": false,\n  \"inInventory\": 100,\n  \"max\": 10,\n  \"min\": 1,\n  \"nameProduct\": \"Pintura blanca\",\n  \"idProduct\": \"A37E408E-E260-40A5-CC10-08DB733669F3\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/Products/UpdateProduct",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Products",
+										"UpdateProduct"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"enabled\": \"<boolean>\",\n  \"inInventory\": \"<integer>\",\n  \"max\": \"<integer>\",\n  \"min\": \"<integer>\",\n  \"nameProduct\": \"<string>\",\n  \"idProduct\": \"<uuid>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Products/UpdateProduct",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Products",
+												"UpdateProduct"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "GetAllProducts",
+					"item": [
+						{
+							"name": "/Products/GetAllProducts",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"top\": \"10\",\n  \"page\": \"5\",\n  \"rowToOrder\": \"\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/Products/GetAllProducts",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Products",
+										"GetAllProducts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"top\": \"<integer>\",\n  \"page\": \"<integer>\",\n  \"rowToOrder\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Products/GetAllProducts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Products",
+												"GetAllProducts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"enabled\": \"<boolean>\",\n    \"inInventory\": \"<integer>\",\n    \"max\": \"<integer>\",\n    \"min\": \"<integer>\",\n    \"nameProduct\": \"<string>\",\n    \"idProduct\": \"<uuid>\"\n  },\n  {\n    \"enabled\": \"<boolean>\",\n    \"inInventory\": \"<integer>\",\n    \"max\": \"<integer>\",\n    \"min\": \"<integer>\",\n    \"nameProduct\": \"<string>\",\n    \"idProduct\": \"<uuid>\"\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "DeleteProduct",
+					"item": [
+						{
+							"name": "/Products/DeleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7093/Products/DeleteProduct?idProduct=263B752D-14F7-4435-80F2-08DB73360508",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Products",
+										"DeleteProduct"
+									],
+									"query": [
+										{
+											"key": "idProduct",
+											"value": "263B752D-14F7-4435-80F2-08DB73360508"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Products/DeleteProduct?idProduct=<uuid>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Products",
+												"DeleteProduct"
+											],
+											"query": [
+												{
+													"key": "idProduct",
+													"value": "<uuid>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"enabled\": \"<boolean>\",\n    \"inInventory\": \"<integer>\",\n    \"max\": \"<integer>\",\n    \"min\": \"<integer>\",\n    \"nameProduct\": \"<string>\",\n    \"idProduct\": \"<uuid>\"\n  },\n  {\n    \"enabled\": \"<boolean>\",\n    \"inInventory\": \"<integer>\",\n    \"max\": \"<integer>\",\n    \"min\": \"<integer>\",\n    \"nameProduct\": \"<string>\",\n    \"idProduct\": \"<uuid>\"\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "AddProduct",
+					"item": [
+						{
+							"name": "/Products/AddProduct",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"enabled\": true,\n  \"inInventory\": 100,\n  \"max\": 10,\n  \"min\": 1,\n  \"nameProduct\": \"Producto prueba\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/Products/AddProduct",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Products",
+										"AddProduct"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"enabled\": \"<boolean>\",\n  \"inInventory\": \"<integer>\",\n  \"max\": \"<integer>\",\n  \"min\": \"<integer>\",\n  \"nameProduct\": \"<string>\",\n  \"idProduct\": \"<uuid>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Products/AddProduct",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Products",
+												"AddProduct"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Buys",
+			"item": [
+				{
+					"name": "GetHistory",
+					"item": [
+						{
+							"name": "/Buys/GetHistory",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "text/plain"
+									}
+								],
+								"url": {
+									"raw": "https://localhost:7093/Buys/GetHistory",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Buys",
+										"GetHistory"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "text/plain"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/Buys/GetHistory",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Buys",
+												"GetHistory"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  {\n    \"clientName\": \"<string>\",\n    \"date\": \"<dateTime>\",\n    \"idType\": 1,\n    \"idShopping\": \"<uuid>\",\n    \"id\": \"<integer>\",\n    \"products\": [\n      {\n        \"idDetatilShopProduct\": \"<uuid>\",\n        \"idProduct\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"shopping\": {\n          \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n        },\n        \"product\": {\n          \"enabled\": \"<boolean>\",\n          \"inInventory\": \"<integer>\",\n          \"max\": \"<integer>\",\n          \"min\": \"<integer>\",\n          \"nameProduct\": \"<string>\",\n          \"idProduct\": \"<uuid>\"\n        }\n      },\n      {\n        \"idDetatilShopProduct\": \"<uuid>\",\n        \"idProduct\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"shopping\": {\n          \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n        },\n        \"product\": {\n          \"enabled\": \"<boolean>\",\n          \"inInventory\": \"<integer>\",\n          \"max\": \"<integer>\",\n          \"min\": \"<integer>\",\n          \"nameProduct\": \"<string>\",\n          \"idProduct\": \"<uuid>\"\n        }\n      }\n    ]\n  },\n  {\n    \"clientName\": \"<string>\",\n    \"date\": \"<dateTime>\",\n    \"idType\": 0,\n    \"idShopping\": \"<uuid>\",\n    \"id\": \"<integer>\",\n    \"products\": [\n      {\n        \"idDetatilShopProduct\": \"<uuid>\",\n        \"idProduct\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"shopping\": {\n          \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n        },\n        \"product\": {\n          \"enabled\": \"<boolean>\",\n          \"inInventory\": \"<integer>\",\n          \"max\": \"<integer>\",\n          \"min\": \"<integer>\",\n          \"nameProduct\": \"<string>\",\n          \"idProduct\": \"<uuid>\"\n        }\n      },\n      {\n        \"idDetatilShopProduct\": \"<uuid>\",\n        \"idProduct\": \"<uuid>\",\n        \"quantity\": \"<integer>\",\n        \"shopping\": {\n          \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n        },\n        \"product\": {\n          \"enabled\": \"<boolean>\",\n          \"inInventory\": \"<integer>\",\n          \"max\": \"<integer>\",\n          \"min\": \"<integer>\",\n          \"nameProduct\": \"<string>\",\n          \"idProduct\": \"<uuid>\"\n        }\n      }\n    ]\n  }\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "BuyItems",
+					"item": [
+						{
+							"name": "/Buys/BuyItems",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"clientName\": \"Prueba Cliente\",\n  \"date\": \"2023-06-22\",\n  \"idType\": 0,\n  \"id\": 2726152,\n  \"products\": [\n    {\n      \"idProduct\": \"A37E408E-E260-40A5-CC10-08DB733669F3\",\n      \"quantity\": \"2\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/Buys/BuyItems",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"Buys",
+										"BuyItems"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"clientName\": \"<string>\",\n  \"date\": \"<dateTime>\",\n  \"idType\": 0,\n  \"idShopping\": \"<uuid>\",\n  \"id\": \"<integer>\",\n  \"products\": [\n    {\n      \"idDetatilShopProduct\": \"<uuid>\",\n      \"idProduct\": \"<uuid>\",\n      \"quantity\": \"<integer>\",\n      \"shopping\": {\n        \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n      },\n      \"product\": {\n        \"enabled\": \"<boolean>\",\n        \"inInventory\": \"<integer>\",\n        \"max\": \"<integer>\",\n        \"min\": \"<integer>\",\n        \"nameProduct\": \"<string>\",\n        \"idProduct\": \"<uuid>\"\n      }\n    },\n    {\n      \"idDetatilShopProduct\": \"<uuid>\",\n      \"idProduct\": \"<uuid>\",\n      \"quantity\": \"<integer>\",\n      \"shopping\": {\n        \"value\": \"<Circular reference to #/components/schemas/Shopping detected>\"\n      },\n      \"product\": {\n        \"enabled\": \"<boolean>\",\n        \"inInventory\": \"<integer>\",\n        \"max\": \"<integer>\",\n        \"min\": \"<integer>\",\n        \"nameProduct\": \"<string>\",\n        \"idProduct\": \"<uuid>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/Buys/BuyItems",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"Buys",
+												"BuyItems"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

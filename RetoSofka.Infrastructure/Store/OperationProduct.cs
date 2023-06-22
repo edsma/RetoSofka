@@ -19,7 +19,14 @@ namespace RetoSofka.Infrastructure.Inventario
 
         public async Task<List<Product>> GetAllProduct(Dtos.Common.Filters filters)
         {
-            return await _context.Product.Take(filters.Top).Skip(filters.Page).ToListAsync();
+            if (filters.Page == 0)
+                filters.Page = 1;
+
+            if (filters.Top == 0)
+                filters.Top = 100;
+
+            var skip = (filters.Page - 1) * filters.Top;
+            return await _context.Product.Skip(skip).Take(filters.Top).ToListAsync();
 
 
         }

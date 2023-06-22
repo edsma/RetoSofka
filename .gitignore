@@ -1,0 +1,25 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/RetoSofka/FileContentIndex
+*.cache
+/RetoSofka.Test/bin/Debug/net6.0
+/RetoSofka.Infrastructure/obj
+/RetoSofka.Aplication/Properties
+/RetoSofka/bin/Debug/net6.0/ColeccionPostman
+/RetoSofka.Domain/Properties/launchSettings.json
+/RetoSofka.Dtos/Properties
+/RetoSofka.Domain/bin/Debug/net6.0
+/RetoSofka.Domain/bin/Debug/net6.0
+/.vs/RetoSofka/v17/RetoSofka/obj/Debug
+/.vs/RetoSofka/v17/.suo
+.vs/RetoSofka/v17/.suo
+.vs/RetoSofka/v17/TestStore/0/003.testlog
+RetoSofka.Domain/bin/Debug/net6.0/RetoSofka.Domain.dll
+RetoSofka.Domain/bin/Debug/net6.0/RetoSofka.Domain.pdb
+RetoSofka.Domain/obj/Debug/net6.0/RetoSofka.Domain.csproj.AssemblyReference.cache
+RetoSofka.Domain/obj/Debug/net6.0/RetoSofka.Domain.dll
+RetoSofka.Domain/obj/Debug/net6.0/RetoSofka.Domain.pdb
+RetoSofka.Infrastructure/bin/Debug/net6.0/RetoSofka.Domain.dll
+.vs/RetoSofka/v17/.suo

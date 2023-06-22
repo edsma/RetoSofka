@@ -1,0 +1,12 @@
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\bin\Debug\net6.0\RetoSofka.Aplication.deps.json
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\bin\Debug\net6.0\RetoSofka.Aplication.dll
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\bin\Debug\net6.0\RetoSofka.Aplication.pdb
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.csproj.AssemblyReference.cache
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.AssemblyInfoInputs.cache
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.AssemblyInfo.cs
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.csproj.CoreCompileInputs.cache
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.dll
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\refint\RetoSofka.Aplication.dll
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\RetoSofka.Aplication.pdb
+C:\Users\edwin.tangarife\Documents\Repos\RetoSofka\RetoSofka\RetoSofka\RetoSofka.Aplication\obj\Debug\net6.0\ref\RetoSofka.Aplication.dll

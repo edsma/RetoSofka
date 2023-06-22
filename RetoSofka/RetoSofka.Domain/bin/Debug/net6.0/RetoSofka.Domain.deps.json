@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RetoSofka.Domain/1.0.0": {
+        "dependencies": {
+          "RetoSofka.Dtos": "1.0.0"
+        },
+        "runtime": {
+          "RetoSofka.Domain.dll": {}
+        }
+      },
+      "RetoSofka.Dtos/1.0.0": {
+        "runtime": {
+          "RetoSofka.Dtos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RetoSofka.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RetoSofka.Dtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

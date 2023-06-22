@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj",
+        "projectName": "RetoSofka.Domain",
+        "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj",
+        "packagesPath": "C:\\Users\\edwin.tangarife\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edwin.tangarife\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj": {
+                "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj",
+        "projectName": "RetoSofka.Dtos",
+        "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj",
+        "packagesPath": "C:\\Users\\edwin.tangarife\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edwin.tangarife\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\RetoSofka.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\RetoSofka.Infrastructure.csproj",
+        "projectName": "RetoSofka.Infrastructure",
+        "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\RetoSofka.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\edwin.tangarife\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edwin.tangarife\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj": {
+                "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Core": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.API.csproj",
+        "projectName": "RetoSofka.API",
+        "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.API.csproj",
+        "packagesPath": "C:\\Users\\edwin.tangarife\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edwin.tangarife\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj": {
+                "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Domain\\RetoSofka.Domain.csproj"
+              },
+              "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj": {
+                "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Dtos\\RetoSofka.Dtos.csproj"
+              },
+              "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\RetoSofka.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\edwin.tangarife\\Documents\\Repos\\RetoSofka\\RetoSofka\\RetoSofka\\RetoSofka.Infrastructure\\RetoSofka.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cvDagr48GuWmJubZOvJ0dLcFhn3LUzRDXfTJMFmjEy+UTbainLChagOYLociwgcSlE9FE2vmVnlpKKCzNwz1xg==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\RetoSofka\\RetoSofka\\Common\\RetoSofka.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.18\\microsoft.windowsdesktop.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.18\\microsoft.netcore.app.ref.6.0.18.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.18\\microsoft.aspnetcore.app.ref.6.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}

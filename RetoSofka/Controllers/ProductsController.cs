@@ -30,6 +30,18 @@ namespace RetoSofka.API.Controllers
             return Ok(await this.operationProduct.GetAllProduct(filters));
         }
 
+
+        /// <summary>
+        /// Consulta un producto por su respectivo Id
+        /// </summary>
+        /// <param name="idProduct">Id del producto</param>
+        /// <returns>Objeto producto con sus propiedades</returns>
+        [HttpGet("GetProductById")]
+        public async Task<ActionResult<Product>> GetProductById( Guid idProduct)
+        {
+            return Ok(await this.operationProduct.GetProductById(idProduct));
+        }
+
         /// <summary>
         /// Ingresa el producto a base de datos
         /// </summary>

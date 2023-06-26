@@ -6,6 +6,8 @@ namespace RetoSofka.Domain.Interfaces
     {
         Task<List<Product>> GetAllProduct(Dtos.Common.Filters filters);
 
+        Task<Product> GetProductById(Guid idProduct);
+
         Task AddProduct(Dtos.Inventorario.Product addProduct);
 
         Task PutProduct(Dtos.Inventorario.Product addProduct);

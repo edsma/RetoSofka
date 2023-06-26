@@ -17,6 +17,12 @@ namespace RetoSofka.Infrastructure.Inventario
 
         }
 
+        public async Task<Product> GetProductById(Guid idProduct)
+        {
+            return await _context.Product
+                .FirstOrDefaultAsync(x=> x.idProduct.Equals(idProduct));
+        }
+
         public async Task<List<Product>> GetAllProduct(Dtos.Common.Filters filters)
         {
             if (filters.Page == 0)

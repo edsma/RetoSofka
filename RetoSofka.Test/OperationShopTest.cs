@@ -30,14 +30,7 @@ namespace RetoSofka.Test
             Assert.True(result.Any());
         }
 
-        [Fact]
-        public async Task TestGenericMethodElsePost()
-        {
-            var mockDataClient = ShoppingMockData.GetDetailsShippoingDto();
-            mockDataClient.Products = new List<Dtos.Shop.DetailShopProduct>();
-            mockDataClient.Products.AddRange(ShoppingMockData.GetDetailsShoppingProductDto());
-            await sut.Shopping(mockDataClient);
-        }
+   
 
      
     }

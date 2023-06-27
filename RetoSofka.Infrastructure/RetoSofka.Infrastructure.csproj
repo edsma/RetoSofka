@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RetoSofka.Aplication\RetoSofka.Aplication.csproj" />
     <ProjectReference Include="..\RetoSofka.Domain\RetoSofka.Domain.csproj" />
   </ItemGroup>
 

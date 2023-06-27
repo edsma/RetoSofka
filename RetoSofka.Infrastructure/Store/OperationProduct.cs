@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Common.Common;
+using Microsoft.EntityFrameworkCore;
+using RetoSofka.Aplication.Services;
 using RetoSofka.Domain.Interfaces;
 using RetoSofka.Domain.Inventario;
 using System.Data.SqlClient;
@@ -49,6 +51,10 @@ namespace RetoSofka.Infrastructure.Inventario
                     .Product.AddAsync(newProduct);
                 await _context.SaveChangesAsync();
             }
+            else
+            {
+                throw new ShoppingException(Constants.messageErrorsNeedMoreItems);
+            }
         }
 
         public async Task DeleteProduct(Guid idProduct)
@@ -75,7 +81,7 @@ namespace RetoSofka.Infrastructure.Inventario
             if (productDb != null && product.min >= productDb.min)
             {
                 Product updateProduct = new Product(
-                    product.idProduct,
+                    product.idProduct.Value,
                     product.nameProduct,
                     product.inInventory,
                     product.enabled,

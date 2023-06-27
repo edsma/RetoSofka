@@ -1,5 +1,6 @@
 ﻿using Common.Common;
 using Microsoft.EntityFrameworkCore;
+using RetoSofka.Aplication.Services;
 using RetoSofka.Domain.Inventario;
 using RetoSofka.Domain.Shop;
 using RetoSofka.Infrastructure.Interfaces;
@@ -42,6 +43,10 @@ namespace RetoSofka.Infrastructure.Store
             if (canContineWithShop)
             {
                 await AddShopToTable(shopToAdd);
+            }
+            else
+            {
+                throw new ShoppingException(Constants.messageErrors);
             }
 
         }

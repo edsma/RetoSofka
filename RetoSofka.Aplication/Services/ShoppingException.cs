@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RetoSofka.Aplication.Services
 {
-    public class Shopping
+    public class ShoppingException: Exception
     {
-
+        public ShoppingException(string value) : base(string.Format($"No se puede realizar el proceso: {value}")) { }
     }
 }

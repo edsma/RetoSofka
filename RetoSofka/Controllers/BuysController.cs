@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Common.Common;
+using Microsoft.AspNetCore.Mvc;
+using RetoSofka.Aplication.Services;
 using RetoSofka.Domain.Interfaces;
 using RetoSofka.Dtos.Shop;
 using RetoSofka.Infrastructure;
@@ -28,7 +30,8 @@ namespace RetoSofka.API.Controllers
         [HttpGet("GetHistory")]
         public async Task<ActionResult<List<Shopping>>> GetAllProducts()
         {
-            return Ok(await this.shoppingProduct.GetHistoryShopping());
+            var result = await this.shoppingProduct.GetHistoryShopping();
+            return Ok(result);
         }
 
         /// <summary>
@@ -38,9 +41,18 @@ namespace RetoSofka.API.Controllers
         [HttpPost("BuyItems")]
         public async Task<ActionResult> BuyItems(Shopping itemsForShopping)
         {
-            await this.shoppingProduct.Shopping(itemsForShopping);
-            await this.operationProduct.UpdateInventory(itemsForShopping?.Products);
-            return Ok();
+            if (itemsForShopping.Products.Count > 0)
+            {
+                await this.shoppingProduct.Shopping(itemsForShopping);
+                await this.operationProduct.UpdateInventory(itemsForShopping?.Products);
+
+                return Ok();
+            }
+            else
+            {
+                return BadRequest(new ShoppingException(Constants.messageErrorsNoItems));
+            }
+           
         }
     }
 }

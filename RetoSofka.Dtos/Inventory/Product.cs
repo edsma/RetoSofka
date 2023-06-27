@@ -4,7 +4,7 @@ namespace RetoSofka.Dtos.Inventorario
 {
     public class Product
     {
-        public Guid idProduct { get; set; }
+        public Guid? idProduct { get; set; }
 
         [Required]
         public string nameProduct { get; set; }
